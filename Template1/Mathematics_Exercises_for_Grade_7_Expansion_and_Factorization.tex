@@ -1,0 +1,432 @@
+\documentclass[a4paper,12pt]{article}
+\usepackage{amsmath}
+\usepackage{fontspec}
+\usepackage{multido} % ត្រូវការសម្រាប់ \multido
+\usepackage[left=1.00in, right=1.00in, top=1.00in, bottom=1.00in]{geometry}
+
+% កំណត់ font ខ្មែរ
+\setmainfont{Khmer OS System} % ប្តូរទៅ font ខ្មែរដែលអ្នកមាន
+
+% បង្កើត command សម្រាប់បន្ទាត់ចំណុច
+\newcommand{\Pointilles}[1][3]{%
+	\multido{}{#1}{\makebox[\linewidth]{\dotfill}\\[\parskip]}%
+}
+
+\title{លំហាត់គណិតវិទ្យា ថ្នាក់ទី៧: ពន្លាតកន្សោម និង ដាក់ជាផលគុណកត្តា}
+\author{អ្នកសរសេរ: ឡាយ ចាន់ហេន \\[0.5cm] 
+Telegram: @laychannhan}
+\date{\today}
+
+\begin{document}
+	
+	\maketitle
+	
+	\section*{ផ្នែកទី១: ពន្លាតកន្សោម (Expansion)}
+	សូមពន្លាតកន្សោមខាងក្រោម៖
+	\begin{enumerate}
+		\item \( (x + 1)(x + 2) \) \\
+		\Pointilles % 3 បន្ទាត់ចំណុច
+		\\
+		
+		\item \( (x - 3)(x + 4) \) \\
+		\Pointilles
+		\\
+		
+		\item \( (x + 5)(x - 2) \) \\
+		\Pointilles
+		\\
+		
+		\item \( (a + 3)(a + 6) \) \\
+		\Pointilles
+		\\
+		
+		\item \( (b - 4)(b + 1) \) \\
+		\Pointilles
+		\\
+		
+		\item \( (x + 7)(x - 1) \) \\
+		\Pointilles
+		\\
+		
+		\item \( (x - 2)(x - 5) \) \\
+		\Pointilles
+		\\
+		
+		\item \( (y + 4)(y + 3) \) \\
+		\Pointilles
+		\\
+		
+		\item \( (z - 6)(z + 2) \) \\
+		\Pointilles
+		\\
+		
+		\item \( (x + 8)(x - 3) \) \\
+		\Pointilles
+		\\
+		
+		\item \( (2x + 1)(x + 3) \) \\
+		\Pointilles
+		\\
+		
+		\item \( (3x - 2)(x + 1) \) \\
+		\Pointilles
+		\\
+		
+		\item \( (x + 4)(2x - 1) \) \\
+		\Pointilles
+		\\
+		
+		\item \( (5x + 3)(x - 2) \) \\
+		\Pointilles
+		\\
+		
+		\item \( (2x - 3)(x + 5) \) \\
+		\Pointilles
+		\\
+		
+		\item \( (3x + 2)(2x - 1) \) \\
+		\Pointilles
+		\\
+		
+		\item \( (x - 4)(3x + 2) \) \\
+		\Pointilles
+		\\
+		
+		\item \( (4x + 1)(x - 3) \) \\
+		\Pointilles
+		\\
+		
+		\item \( (2x - 5)(2x + 1) \) \\
+		\Pointilles
+		\\
+		
+		\item \( (3x + 4)(x - 2) \) \\
+		\Pointilles
+		\\
+		
+		\item \( (x + 2)^2 \) \\
+		\Pointilles
+		\\
+		
+		\item \( (x - 3)^2 \) \\
+		\Pointilles
+		\\
+		
+		\item \( (2x + 1)^2 \) \\
+		\Pointilles
+		\\
+		
+		\item \( (3x - 2)^2 \) \\
+		\Pointilles
+		\\
+		
+		\item \( (x + 5)^2 \) \\
+		\Pointilles
+		\\
+		
+		\item \( (x - 4)(x + 4) \) \\
+		\Pointilles
+		\\
+		
+		\item \( (2x + 3)(2x - 3) \) \\
+		\Pointilles
+		\\
+		
+		\item \( (5x - 1)(5x + 1) \) \\
+		\Pointilles
+		\\
+		
+		\item \( (x + 6)(x - 6) \) \\
+		\Pointilles
+		\\
+		
+		\item \( (3x + 2)(3x - 2) \) \\
+		\Pointilles
+		\\
+		
+		\item \( (x + 1)(x + 2) + 3x \) \\
+		\Pointilles
+		\\
+		
+		\item \( (2x - 1)(x + 4) - 5 \) \\
+		\Pointilles
+		\\
+		
+		\item \( (x + 3)(x - 2) + x^2 \) \\
+		\Pointilles
+		\\
+		
+		\item \( (3x + 1)(x - 1) + 2x \) \\
+		\Pointilles
+		\\
+		
+		\item \( (x - 5)(x + 2) - 4 \) \\
+		\Pointilles
+		\\
+		
+		\item \( (4x + 3)(x - 1) + 6 \) \\
+		\Pointilles
+		\\
+		
+		\item \( (2x - 3)(x + 2) - x \) \\
+		\Pointilles
+		\\
+		
+		\item \( (x + 7)(x - 2) + 5x \) \\
+		\Pointilles
+		\\
+		
+		\item \( (3x + 4)(x - 3) - 2x^2 \) \\
+		\Pointilles
+		\\
+		
+		\item \( (x - 6)(x + 1) + 3 \) \\
+		\Pointilles
+		\\
+		
+		\item \( (2x + 5)(3x - 1) \) \\
+		\Pointilles
+		\\
+		
+		\item \( (4x - 3)(2x + 1) \) \\
+		\Pointilles
+		\\
+		
+		\item \( (5x + 2)(x - 4) \) \\
+		\Pointilles
+		\\
+		
+		\item \( (3x - 5)(2x + 3) \) \\
+		\Pointilles
+		\\
+		
+		\item \( (x + 2)(4x - 3) \) \\
+		\Pointilles
+		\\
+		
+		\item \( (2x - 1)(5x + 2) \) \\
+		\Pointilles
+		\\
+		
+		\item \( (3x + 4)(2x - 5) \) \\
+		\Pointilles
+		\\
+		
+		\item \( (x - 3)(6x + 1) \) \\
+		\Pointilles
+		\\
+		
+		\item \( (4x + 5)(3x - 2) \) \\
+		\Pointilles
+		\\
+		
+		\item \( (5x - 3)(2x + 4) \) \\
+		\Pointilles
+		\\
+	\end{enumerate}
+	
+	\section*{ផ្នែកទី២: ដាក់ជាផលគុណកត្តា (Factorization)}
+	សូមដាក់កន្សោមខាងក្រោមជាផលគុណកត្តា៖
+	\begin{enumerate}
+		\item \( x^2 + 2x + 3x + 6 \) \\
+		\Pointilles
+		\\
+		
+		\item \( x^2 - 4x - 3x + 12 \) \\
+		\Pointilles
+		\\
+		
+		\item \( 2x^2 + 3x + 4x + 6 \) \\
+		\Pointilles
+		\\
+		
+		\item \( 3x^2 - 2x - 6x + 4 \) \\
+		\Pointilles
+		\\
+		
+		\item \( x^2 + 5x - 2x - 10 \) \\
+		\Pointilles
+		\\
+		
+		\item \( 4x^2 - 3x - 8x + 6 \) \\
+		\Pointilles
+		\\
+		
+		\item \( 2x^2 + 6x + x + 3 \) \\
+		\Pointilles
+		\\
+		
+		\item \( 5x^2 - 10x - 2x + 4 \) \\
+		\Pointilles
+		\\
+		
+		\item \( x^2 - 7x + 3x - 21 \) \\
+		\Pointilles
+		\\
+		
+		\item \( 3x^2 + 9x - 2x - 6 \) \\
+		\Pointilles
+		\\
+		
+		\item \( 2x(x + 1) + 3(x + 1) \) \\
+		\Pointilles
+		\\
+		
+		\item \( 5x(x - 2) - 1(x - 2) \) \\
+		\Pointilles
+		\\
+		
+		\item \( 3x(x + 4) + 2(x + 4) \) \\
+		\Pointilles
+		\\
+		
+		\item \( 4x(x - 3) - 5(x - 3) \) \\
+		\Pointilles
+		\\
+		
+		\item \( x(x + 5) + 2(x + 5) \) \\
+		\Pointilles
+		\\
+		
+		\item \( 6x(x - 1) - 3(x - 1) \) \\
+		\Pointilles
+		\\
+		
+		\item \( 2x(x + 3) + x(x + 3) \) \\
+		\Pointilles
+		\\
+		
+		\item \( 7x(x - 4) - 2(x - 4) \) \\
+		\Pointilles
+		\\
+		
+		\item \( 3x(x + 2) - 4(x + 2) \) \\
+		\Pointilles
+		\\
+		
+		\item \( 5x(x - 5) + 3(x - 5) \) \\
+		\Pointilles
+		\\
+		
+		\item \( x^2 + 3x - 4x - 12 \) \\
+		\Pointilles
+		\\
+		
+		\item \( 2x^2 - 5x + 6x - 15 \) \\
+		\Pointilles
+		\\
+		
+		\item \( 3x^2 + 2x - 9x - 6 \) \\
+		\Pointilles
+		\\
+		
+		\item \( 4x^2 - 7x + 8x - 14 \) \\
+		\Pointilles
+		\\
+		
+		\item \( x^2 + 6x - 5x - 30 \) \\
+		\Pointilles
+		\\
+		
+		\item \( 5x^2 + 10x - 3x - 6 \) \\
+		\Pointilles
+		\\
+		
+		\item \( 2x^2 - 8x + 4x - 16 \) \\
+		\Pointilles
+		\\
+		
+		\item \( 3x^2 + 12x - 5x - 20 \) \\
+		\Pointilles
+		\\
+		
+		\item \( 6x^2 - 3x - 4x + 2 \) \\
+		\Pointilles
+		\\
+		
+		\item \( 7x^2 + 14x - 2x - 4 \) \\
+		\Pointilles
+		\\
+		
+		\item \( 2x(x + 2) + 5x(x + 2) \) \\
+		\Pointilles
+		\\
+		
+		\item \( 3x(x - 1) - 4x(x - 1) \) \\
+		\Pointilles
+		\\
+		
+		\item \( 4x(x + 3) + 2x(x + 3) \) \\
+		\Pointilles
+		\\
+		
+		\item \( 5x(x - 2) - 3x(x - 2) \) \\
+		\Pointilles
+		\\
+		
+		\item \( x(x + 4) + 6x(x + 4) \) \\
+		\Pointilles
+		\\
+		
+		\item \( 2x(x - 5) - x(x - 5) \) \\
+		\Pointilles
+		\\
+		
+		\item \( 3x(x + 1) + 7x(x + 1) \) \\
+		\Pointilles
+		\\
+		
+		\item \( 4x(x - 3) - 5x(x - 3) \) \\
+		\Pointilles
+		\\
+		
+		\item \( 6x(x + 2) + 2x(x + 2) \) \\
+		\Pointilles
+		\\
+		
+		\item \( 5x(x - 4) - 4x(x - 4) \) \\
+		\Pointilles
+		\\
+		
+		\item \( 2x^2 + 4x - 3x - 6 \) \\
+		\Pointilles
+		\\
+		
+		\item \( 3x^2 - 9x + 2x - 6 \) \\
+		\Pointilles
+		\\
+		
+		\item \( 4x^2 + 8x - 5x - 10 \) \\
+		\Pointilles
+		\\
+		
+		\item \( 5x^2 - 15x + 7x - 21 \) \\
+		\Pointilles
+		\\
+		
+		\item \( 6x^2 + 12x - 4x - 8 \) \\
+		\Pointilles
+		\\
+		
+		\item \( 2x(x + 3) + 3x(2x + 6) \) \\
+		\Pointilles
+		\\
+		
+		\item \( 5x(x - 1) - 2x(3x - 3) \) \\
+		\Pointilles
+		\\
+		
+		\item \( 3x(x + 4) + 4x(2x + 8) \) \\
+		\Pointilles
+		\\
+		
+		\item \( 4x(x - 2) - 5x(2x - 4) \) \\
+		\Pointilles
+		\\
+		
+		\item \( 6x(x + 1) + 2x(3x + 3) \) \\
+		\Pointilles
+		\\
+	\end{enumerate}
+	
+\end{document}
